@@ -21,9 +21,11 @@ def get_fields_by_rain_quantity(
     if fields_qs is None:
         fields_qs = get_fields()
 
-    return fields_qs.filter(
-        quantity__gte=quantity
+    fields_qs = fields_qs.filter(
+        rain__quantity__gte=quantity
     )
+
+    return fields_qs.distinct()
 
 
 def get_fields_by_rain_date(
@@ -34,6 +36,8 @@ def get_fields_by_rain_date(
     if fields_qs is None:
         fields_qs = get_fields()
 
-    return fields_qs.filter(
+    fields_qs = fields_qs.filter(
         rain__date__gte=date
     )
+
+    return fields_qs.distinct()
