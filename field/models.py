@@ -4,7 +4,6 @@ from django.contrib import admin
 
 # Local imports
 from utils.base_model import BaseModel
-from rain.models import Rain
 
 # Me parecio ir muy por lo fino para implementar PostGIS y usar la libreria :
 # from django.contrib.gis.db import models
@@ -14,19 +13,22 @@ from rain.models import Rain
 # Pero para ubicaciones geograficas usaria models.PointField o models.PolygonField dependiendo el problema
 
 
-class Hectare(BaseModel):
+class Field(BaseModel):
     name = models.CharField(max_length=50)
-    lat = models.FloatField()
-    long = models.FloatField()
 
     def __str__(self):
         return self.name
 
 
-class Field(BaseModel):
+class Hectare(BaseModel):
     name = models.CharField(max_length=50)
-    hectares = models.ManyToManyField(Hectare, related_name='field')
-    rains = models.ManyToManyField(Rain, related_name='field')
+    lat = models.FloatField()
+    long = models.FloatField()
+    filed = models.ForeignKey(
+        to=Field,
+        on_delete=models.CASCADE,
+        related_name="hectare"
+    )
 
     def __str__(self):
         return self.name

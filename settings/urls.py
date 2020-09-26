@@ -18,9 +18,12 @@ from django.urls import path
 
 # Local imports
 from rain.urls import urlpatterns as rain_urls
+from field.urls import urlpatterns as field_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
 urlpatterns += rain_urls
+urlpatterns += field_urls
+

@@ -9,4 +9,4 @@ class RainSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Rain
-        fields = ['date', 'quantity', 'field']
+        fields = ['date', 'quantity', 'field_owner']
