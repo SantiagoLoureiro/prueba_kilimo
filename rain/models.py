@@ -11,7 +11,7 @@ class Rain(BaseModel):
     date = models.DateTimeField()
 
     def __str__(self):
-        return f"rain :: {self.field.name}"
+        return f"rain :: {self.field}"
 
 
 admin.site.register(Rain)
