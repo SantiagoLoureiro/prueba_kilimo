@@ -4,6 +4,7 @@ from django.contrib import admin
 
 # Local imports
 from utils.base_model import BaseModel
+from rain.models import Rain
 
 # Me parecio ir muy por lo fino para implementar PostGIS y usar la libreria :
 # from django.contrib.gis.db import models
@@ -24,7 +25,8 @@ class Hectare(BaseModel):
 
 class Field(BaseModel):
     name = models.CharField(max_length=50)
-    hectares = models.ManyToManyField(Hectare)
+    hectares = models.ManyToManyField(Hectare, related_name='field')
+    rains = models.ManyToManyField(Rain, related_name='field')
 
     def __str__(self):
         return self.name

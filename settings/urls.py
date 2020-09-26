@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# Local imports
+from rain.urls import urlpatterns as rain_urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+urlpatterns += rain_urls

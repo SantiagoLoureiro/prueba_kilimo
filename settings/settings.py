@@ -37,10 +37,13 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
 ]
 
 LOCAL_APPS = [
-    'field'
+    'utils',
+    'field',
+    'rain'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
