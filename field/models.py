@@ -24,7 +24,7 @@ class Hectare(BaseModel):
     name = models.CharField(max_length=50)
     lat = models.FloatField()
     long = models.FloatField()
-    filed = models.ForeignKey(
+    field_owner = models.ForeignKey(
         to=Field,
         on_delete=models.CASCADE,
         related_name="hectare"

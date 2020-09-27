@@ -62,8 +62,12 @@ def get_fields_by_rain_and_days(
         rain_quantity: float = None,
         days_ago_rain: int = constants.MAX_DAYS_FOR_QUERY_FIELDS
 ):
-
     fields_qs = None
+
+    if int(days_ago_rain) > constants.MAX_DAYS_FOR_QUERY_FIELDS:
+        raise Exception("days_ago_rain should be > than"
+                        f"{constants.MAX_DAYS_FOR_QUERY_FIELDS}")
+
     if rain_quantity:
         fields_qs = selectors.get_fields_by_rain_quantity(
             quantity=rain_quantity,

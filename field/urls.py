@@ -1,9 +1,9 @@
 # Djagno imports
-from django.conf.urls import url
+from django.urls import path
 
 # Local imports
 from field import views
 
 urlpatterns = [
-    url(r'^field/rain/$', views.FieldRainView.as_view(), name='rain'),
+    path(r'rain/', views.FieldRainView.as_view(), name='field-rain'),
 ]

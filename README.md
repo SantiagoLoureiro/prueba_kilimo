@@ -42,7 +42,8 @@ donde N puede ser cualquier cantidad de días con un tope de 7.
 Test
 
 ```bash
-field.tests.test_field_rain_view.test
+field.tests.views.test_field_rain_view.test_rain_by_days_ago_rain_200
+field.tests.views.test_field_rain_view.test_rain_get_by_days_ago_rain_400
 ```
 
 
@@ -56,7 +57,8 @@ es un número en milímetros.
 Test
 
 ```bash
-field.tests.test_field_rain_view.test
+field.tests.views.test_field_rain_view.test_rain_get_none_by_quantity_200
+field.tests.views.test_field_rain_view.test_rain_by_quantity_200
 ```
 
 Objetive 3
@@ -68,7 +70,7 @@ Listado de lluvias por campo.
 Test
 
 ```bash
-rain.test_rain_view.test
+rain.tests.views.test_rain_view.test_rain_view_get_status_200
 ```
 
 Objetive 4
@@ -80,6 +82,7 @@ Creación de lluvia por campo.
 Test
 
 ```bash
-rain.test_rain_view.test
+rain.tests.views.test_rain_view.test_rain_view_post_status_200
+rain.tests.views.test_rain_view.test_rain_view_post_status_400
 ```
 

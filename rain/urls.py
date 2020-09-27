@@ -1,9 +1,9 @@
 # Djagno imports
-from django.conf.urls import url
+from django.urls import path
 
 # Local imports
 from rain import views
 
 urlpatterns = [
-    url(r'^rain/$', views.RainView.as_view(), name='rain'),
+    path(r'', views.RainView.as_view(), name='rain'),
 ]
