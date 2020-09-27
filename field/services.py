@@ -36,7 +36,7 @@ def get_fields_whit_rain_prom(
     return data_respose
 
 
-def filter_fields_by_rain_days_age(
+def filter_fields_by_rain_days_ago(
     fieds_qs: QuerySet = None,
     days_ago_rain: int = constants.MAX_DAYS_FOR_QUERY_FIELDS
 ):
@@ -75,7 +75,7 @@ def get_fields_by_rain_and_days(
         )
 
     if days_ago_rain:
-        fields_qs = filter_fields_by_rain_days_age(
+        fields_qs = filter_fields_by_rain_days_ago(
             fieds_qs=fields_qs
         )
 
