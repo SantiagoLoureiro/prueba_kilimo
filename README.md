@@ -3,7 +3,7 @@
 
 ## Installation
 
-First, install requeriments.
+Install requeriments.
 
 ```bash
 pip install -r requeriments.txt
