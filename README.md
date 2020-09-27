@@ -6,7 +6,7 @@
 First, install requeriments.
 
 ```bash
-pip install -r requeriment.txt
+pip install -r requeriments.txt
 ```
 
 For initialize database
@@ -19,7 +19,7 @@ python manage.py migrate
 ## Load Data in DB
 
 ```bash
-python manage.py loaddata settings/fixture/data.json
+python manage.py loaddata settings/fixtures/data.json
 ```
 
 
