@@ -15,5 +15,3 @@ class FieldSerializer(serializers.ModelSerializer):
 class FieldRainSerializer(serializers.Serializer):
     rain_quantity = serializers.FloatField(required=False)
     days_ago_rain = serializers.IntegerField(required=False)
-
-

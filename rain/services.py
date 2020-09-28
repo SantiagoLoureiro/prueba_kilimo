@@ -28,4 +28,3 @@ def get_rian_by_fields(
         data_return.append(serializer.data)
 
     return data_return
-

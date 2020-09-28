@@ -1,6 +1,5 @@
 # Python imports
 import pytest
-from model_bakery import baker
 
 # Django imports
 from rest_framework.test import APIClient

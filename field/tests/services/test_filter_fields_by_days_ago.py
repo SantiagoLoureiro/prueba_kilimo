@@ -73,8 +73,7 @@ class TestFieldServices:
             self.service(
                 days_ago_rain=8
             )
-        except:
+        except Exception:
             get_error = True
 
         assert get_error
-

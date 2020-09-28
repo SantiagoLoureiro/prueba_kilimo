@@ -73,4 +73,3 @@ class TestRain:
         )
 
         assert response.status_code == 400
-

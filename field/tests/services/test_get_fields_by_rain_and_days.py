@@ -74,8 +74,7 @@ class TestFieldServices:
             get_fields_by_rain_and_days(
                 days_ago_rain=8
             )
-        except:
+        except Exception:
             get_error = True
 
         assert get_error
-

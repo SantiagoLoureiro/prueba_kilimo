@@ -1,6 +1,5 @@
 # Python imports
 import pytest
-from datetime import timedelta
 
 # Django imports
 from django.utils import timezone
@@ -41,5 +40,3 @@ class TestFieldServices:
 
         assert fields[0]['rain_quantity_average'] == 150.0
         assert len(fields) == 1
-
-

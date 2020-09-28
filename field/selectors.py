@@ -1,5 +1,5 @@
 # Python imports
-from datetime import datetime, date
+from datetime import date
 
 # Django imports
 from django.db.models import QuerySet
