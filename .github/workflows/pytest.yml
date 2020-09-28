@@ -1,6 +1,4 @@
 language: python
 python:
-    - "3.6"
-install:
-    - pip install -r requirements.txt # if you put your dependencies in a file
+    - 3.6
 script: pytest
