@@ -86,3 +86,9 @@ rain.tests.views.test_rain_view.test_rain_view_post_status_200
 rain.tests.views.test_rain_view.test_rain_view_post_status_400
 ```
 
+## Authentication
+
+For admin panel, te default user is: (if before run loaddata command)
+
+  - Username: Admin
+  - Password: 1
