@@ -20,7 +20,7 @@ jobs:
         pip install -r requeriments.txt
     - name: Lint with flake8
       run: |
-        flake8 . --count --exit-zero
+        flake8 . --exclude=migrations
     - name: Test with pytest
       run: |
         pytest

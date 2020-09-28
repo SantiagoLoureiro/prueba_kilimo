@@ -5,6 +5,7 @@ from django.contrib import admin
 # Local imports
 from utils.base_model import BaseModel
 
+# flake8: noqa
 # Me parecio ir muy por lo fino para implementar PostGIS y usar la libreria :
 # from django.contrib.gis.db import models
 
