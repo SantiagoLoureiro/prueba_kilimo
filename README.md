@@ -92,3 +92,11 @@ For admin panel, te default user is: (if before run loaddata command)
 
   - Username: Admin
   - Password: 1
+  
+## CI
+
+Proyect have CI for run test and validate pep8 in
+
+```bash
+.github/workflows/pytest.yml
+```
