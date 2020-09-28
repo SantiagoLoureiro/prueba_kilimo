@@ -1,17 +1,17 @@
+# Python imports
 import pytest
+from model_bakery import baker
+
+# Django imports
+from django.utils import timezone
+
+# Local imports
+from field import models as field_models
+from rain import models as rain_models
 
 
 @pytest.fixture
 def data_db():
-    # Python imports
-    from model_bakery import baker
-
-    # Django imports
-    from django.utils import timezone
-
-    # Local imports
-    from field import models as field_models
-    from rain import models as rain_models
 
     field = baker.make(
         rain_models.Field,
