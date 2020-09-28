@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: Set up Kiliwo app
       uses: actions/setup-python@v2
       with:
@@ -20,7 +19,7 @@ jobs:
         pip install -r requeriments.txt
     - name: Lint with flake8
       run: |
-        flake8 .
+        flake8 . --count --exit-zero
     - name: Test with pytest
       run: |
         pytest
